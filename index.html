@@ -490,7 +490,9 @@ const IMG = {
   "set-black":[631,421,"0% 100%"], "set-black-detail":[631,437,"cover"],
   "panty-black-detail":[631,420,"cover"], "bra-black":[631,420,"50% 0%"],
   "panty-black":[353,235,"0% 100%"], "set-nude":[352,529,"100% 100%"], "set-pink":[1000,667,"100% 100%"],
-  "bra-pink":[1000,667,"50% 0%"], "bra-pink-pearl":[1000,667,"cover"], "bra-nude-pearl":[1000,667,"cover"]
+  "bra-pink":[1000,667,"50% 0%"], "bra-pink-pearl":[1000,667,"cover"], "bra-nude-pearl":[1000,667,"cover"],
+  "lace-pink":[800,533,"cover"], "lace-pink-2":[800,533,"cover"],
+  "panty-nude":[800,533,"cover"], "panty-nude-hand":[800,533,"cover"], "panty-nude-detail":[800,454,"cover"]
 };
 const SWATCH = {Black:"#1d1b1a", Pink:"#efc4be", Nude:"#d8b48c"};
 const BAND = {name:"Bra (Band)", values:["32","34","36"]};
@@ -502,7 +504,7 @@ const PRODUCTS = [
    colors:{Black:["set-black","set-black-detail","panty-black-detail","bra-black"]},
    options:[BAND, CUP(), PANTY(null,["XL"])], desc:SET_DESC("black")},
   {handle:"set-in-nude", name:"Set in Nude", type:"Sets", price:115, order:2,
-   colors:{Nude:["set-nude","bra-nude-pearl"]},
+   colors:{Nude:["set-nude","bra-nude-pearl","panty-nude","panty-nude-hand"]},
    options:[BAND, CUP(["A","B","C","D","DD"]), PANTY(["XS","S","M","L","XL","XXL"])], desc:SET_DESC("nude")},
   {handle:"set-in-pink", name:"Set in Pink", type:"Sets", price:115, order:3,
    colors:{Pink:["set-pink","bra-pink","bra-pink-pearl"]},
@@ -513,7 +515,7 @@ const PRODUCTS = [
    options:[{name:"Band", values:["32","34","36","38"]}, {name:"Cup", values:["A","B","C","D","DD"]}],
    desc:c=>`Underwire bra with silk lining. ${c} stretch lace. Keyhole cutout with a freshwater pearl detail. Adjustable straps. Hook-and-eye back closure. Soft, supportive fit.`},
   {handle:"signature-panty", name:"Signature Panty", type:"Panties", price:26, order:5,
-   colors:{Black:["panty-black","panty-black-detail"], Pink:["set-pink"], Nude:["set-nude"]},
+   colors:{Black:["panty-black","panty-black-detail"], Pink:["lace-pink","lace-pink-2"], Nude:["panty-nude","panty-nude-hand","panty-nude-detail"]},
    options:[{name:"Size", values:["XS","S","M","L","XL","XXL"], soldOut:["XL"]}],
    desc:c=>`High-rise panty. ${c} stretch lace. Organic cotton lining. Backside keyhole cutout with silk. Soft, flexible fit. Designed to support everyday comfort.`},
 ];
