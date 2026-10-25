@@ -389,7 +389,7 @@ body.has-buybar .to-top{display:none}
 </style>
 </head>
 <body>
-<div class="demo-note">Redesign demo, not the live store. Photos are cropped from screenshots of lenilace.com.</div>
+<div class="demo-note">Redesign demo, not the live store. Product photos from lenilace.com.</div>
 <div class="announce caps">Pre-orders ship by March 15 · Free shipping over $100</div>
 
 <header class="header" id="header">
@@ -489,7 +489,8 @@ body.has-buybar .to-top{display:none}
 const IMG = {
   "set-black":[631,421,"0% 100%"], "set-black-detail":[631,437,"cover"],
   "panty-black-detail":[631,420,"cover"], "bra-black":[631,420,"50% 0%"],
-  "panty-black":[353,235,"0% 100%"], "set-nude":[352,529,"100% 100%"], "set-pink":[353,235,"100% 100%"]
+  "panty-black":[353,235,"0% 100%"], "set-nude":[352,529,"100% 100%"], "set-pink":[1000,667,"100% 100%"],
+  "bra-pink":[1000,667,"50% 0%"], "bra-pink-pearl":[1000,667,"cover"], "bra-nude-pearl":[1000,667,"cover"]
 };
 const SWATCH = {Black:"#1d1b1a", Pink:"#efc4be", Nude:"#d8b48c"};
 const BAND = {name:"Bra (Band)", values:["32","34","36"]};
@@ -501,14 +502,14 @@ const PRODUCTS = [
    colors:{Black:["set-black","set-black-detail","panty-black-detail","bra-black"]},
    options:[BAND, CUP(), PANTY(null,["XL"])], desc:SET_DESC("black")},
   {handle:"set-in-nude", name:"Set in Nude", type:"Sets", price:115, order:2,
-   colors:{Nude:["set-nude"]},
+   colors:{Nude:["set-nude","bra-nude-pearl"]},
    options:[BAND, CUP(["A","B","C","D","DD"]), PANTY(["XS","S","M","L","XL","XXL"])], desc:SET_DESC("nude")},
   {handle:"set-in-pink", name:"Set in Pink", type:"Sets", price:115, order:3,
-   colors:{Pink:["set-pink"]},
+   colors:{Pink:["set-pink","bra-pink","bra-pink-pearl"]},
    options:[BAND, CUP(), PANTY(null,["XL"])],
    desc:"Matching bra and panty set in pink stretch lace and matching silk details. Underwire bra. Keyhole cutout adorned with a freshwater pearl. Adjustable straps. High-rise panty. Backside keyhole cutout on the panty with silk. Organic cotton-lined. Soft stretch construction. Designed for comfort and support."},
   {handle:"signature-bra", name:"Signature Bra", type:"Bras", price:89, order:4,
-   colors:{Black:["bra-black","set-black-detail"], Pink:["set-pink"], Nude:["set-nude"]},
+   colors:{Black:["bra-black","set-black-detail"], Pink:["bra-pink","bra-pink-pearl","set-pink"], Nude:["set-nude","bra-nude-pearl"]},
    options:[{name:"Band", values:["32","34","36","38"]}, {name:"Cup", values:["A","B","C","D","DD"]}],
    desc:c=>`Underwire bra with silk lining. ${c} stretch lace. Keyhole cutout with a freshwater pearl detail. Adjustable straps. Hook-and-eye back closure. Soft, supportive fit.`},
   {handle:"signature-panty", name:"Signature Panty", type:"Panties", price:26, order:5,

@@ -79,12 +79,13 @@ backdrop, with a scroll cue. Below that: featured sets, a detail story, your Abo
 
 ## Before going live
 
-- **Photos:** the demo's photos are low-resolution crops from screenshots. Use the
+- **Photos:** the pink set/bra photos and the pearl close-ups are originals (1000px), but
+  the rest are low-resolution crops from screenshots. Use the
   original files at 2000px+. For the cleanest grid, shoot the next batch as **square or
   4:5 portrait** on the same satin, then mark them `"cover"` in the `IMG` table.
-- **Missing photos:** Set in Pink and Set in Nude only have one photo here, and the pink
-  and nude colourways of the Signature Bra/Panty reuse the set photos. Add their real
-  photos to `img/`, register them in `IMG`, and list them under each product's `colors`.
+- **Missing photos:** the pink and nude Signature Panty still reuse the set photos, and
+  Set in Nude has no full-length close-ups yet. Add the real photos to `img/`, register
+  them in `IMG`, and list them under each product's `colors`.
 - **Placeholder copy:** the Fit, Care, Shipping/returns and contact FAQ text is
   placeholder. Replace it with your actual policies.
 - **Shopify:** the layout maps onto a standard Shopify theme (collection grid, product
